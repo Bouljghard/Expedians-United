@@ -2,28 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Expedians United - Home</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Saira+Stencil+One&family=Sirin+Stencil&display=swap" rel="stylesheet">
     <link rel="icon" href="../assets/images/icon.png">
-  </head>
-
-  <body>
+  </head><body style="background-image: url('assets/images/background.png');">
     <header>
       <div class="grid-container-banner">
-          <div class="grid-row-3" style="width: 100%;"><a href="index.html"><img src="../assets/images/logo.png" style="margin-top: 5px; margin-left: 5px; height: 100px; float: left;"></a></div>
+          <div class="grid-row-3" style="width: 100%;"><a href="index.html"><img id="logo-banner" src="assets/images/logo.png"></a></div>
           <div style="width: 100%;"><h1>
             <a id="homepage1" href="index.html">Expedians United</a>
           </h1></div>
           <div style="margin-top: 10px">
-            <a href="https://www.meetup.com/expedians-unitedprague-college-football-meetup-group/" target="_blank"><img id=social-media-icon-banner src="../assets/images/meetup2.png"></a>
-            <a href="https://www.instagram.com/expedians_united/" target="_blank"><img id=social-media-icon-banner src="../assets/images/instagram2.png"></a>
-            <a href="https://www.facebook.com/expedians.united" target="_blank"><img id=social-media-icon-banner src="../assets/images/facebook2.png"></a>
+            <a href="https://www.meetup.com/expedians-unitedprague-college-football-meetup-group/" target="_blank"><img id=social-media-icon-banner src="assets/images/meetup2.png"></a>
+            <a href="https://www.instagram.com/expedians_united/" target="_blank"><img id=social-media-icon-banner src="assets/images/instagram2.png"></a>
+            <a href="https://www.facebook.com/expedians.united" target="_blank"><img id=social-media-icon-banner src="assets/images/facebook2.png"></a>
           </div>
           <div style="width: 100%;"><h2>
-            <a id="homepage2" href="../index.html">Official Website</a>
+            <a id="homepage2" href="index.html">Official Website</a>
           </h2></div>
           <div></div>
           <div style="width: 100%;"><h3 id="homepage3">
@@ -31,25 +30,28 @@
           </h3></div>
           <div class="grid-container-menu">
             <div class="grid-item-menu">
-              <a href="../index.html">HOME</a>
+              <a href="index.html">HOME</a>
+            </div>
+            <div class="grid-item-menu dropdown"> TEAMS
+              <div class="dropdown-content-menu">
+                <a href="aces.html">ACES</a>
+                <a href="braves.html">BRAVES</a>
+              </div>
             </div>
             <div class="grid-item-menu">
-              <a href="../team-hanspaulka.html">TEAM</a>
+              <a href="fields.html">FIELDS</a>
+            </div>
+            <div class="grid-item-menu dropdown"> RECORDS
+              <div class="dropdown-content-menu">
+                <a href="club-records.html">CLUB</a>
+                <a href="individual-records.html">PLAYERS</a>
+              </div>
             </div>
             <div class="grid-item-menu">
-              <a href="../matches.html">MATCHES</a>
+              <a href="join-us.html">JOIN US</a>
             </div>
             <div class="grid-item-menu">
-              <a href="../fields.html">FIELDS</a>
-            </div>
-            <div class="grid-item-menu">
-              <a href="../club-records.html">RECORDS</a>
-            </div>
-            <div class="grid-item-menu">
-              <a href="../join-us.html">JOIN US</a>
-            </div>
-            <div class="grid-item-menu">
-              <a href="../contact.html">CONTACT</a>
+              <a href="contact.html">CONTACT</a>
             </div>
           </div>
       </div>
@@ -66,7 +68,7 @@
             <div class="grid-item grid-item-results">4-0</div>
             <div class="grid-item grid-team-logo"><img src="../assets/images/Logos/viktoria_bitovska_b.png" style="width: 100%;"></div>
             <div class="grid-item"></div>
-            <div class="grid-item grid-field">Areál SK Hostivař</div>
+            <div class="grid-item grid-field">Areál SK Hostivař, Prague</div>
             <div class="grid-item"></div>
             <div class="grid-item grid-column-3"><hr></div>
             <div class="grid-item grid-title">Expedians Man of the Match:</div>
@@ -107,20 +109,14 @@
             <p>Jakub Švasta (GK), Jakub Červenka, Tomáš Fiala, Michal Kriml, Vojtěch Miškovský (C), Tomáš Ondráček</p>
          </div>
          <div class="grid-item grid-column-3"><hr></div>
-      </main>
-      <footer>
-        <div>
-          <a href="https://www.facebook.com/expedians.united" target="_blank"><img id= social-media-icon src="../assets/images/facebook.png"></a>
-          <a href="https://www.instagram.com/expedians_united/" target="_blank"><img id= social-media-icon src="../assets/images/instagram.png"></a>
-          <a href="https://www.meetup.com/expedians-unitedprague-college-football-meetup-group/" target="_blank"><img id=social-media-icon src="../assets/images/meetup.png"></a>
-        </div>
-        <div>
-          <p>Expedians United <span style="color: #59AD7B;font-weight: bold;">|</span> Prague <span style="color: #59AD7B;font-weight: bold;">|</span> Czech Republic</p>
-        </div>
-        <div>
-          <p>+420 734126627 <span style="color: #59AD7B;font-weight: bold;">|</span> <a href="mailto:expediansunited@gmail.com">expediansunited@gmail.com</a></p>
-        </div>
-        </footer>
+         <br><hr>
+         <h1>Expedians Calendar</h1>
+         <hr><br>
+         <iframe src="https://calendar.google.com/calendar/embed?src=expediansunited%40gmail.com&ctz=Europe%2FPrague" class="calendar"></iframe>
+       </main>
+       <footer>
+        <iframe src="footer.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+      </footer>
   </body>
 
 </html>

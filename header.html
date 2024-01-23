@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Expedians United - Footer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Saira+Stencil+One&family=Sirin+Stencil&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/icon.png">
+    <style>
+      header {
+        padding: 0px;
+        border-radius: 5px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+      }
+
+      .grid-container-banner {
+        display: grid;
+        grid-template-columns: 120px 320px auto;
+        grid-template-rows: 33% 33% 33%;
+        background-color: #3b7753;
+        align-items: center;
+        padding-top: 5px;
+        border-radius: 5px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: 68%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        border: white solid 2px;
+       }
+
+       .grid-container-menu {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        color: white;
+        }
+
+        .grid-item-menu, .dropdown-content-menu a {
+        text-align: center;
+        border-radius: 5px;
+        padding: 8px 7px;
+        margin: 0 2px;
+        background-color: black;
+        font-size: 100%;
+        white-space: nowrap;
+        }
+
+        .grid-item-menu:hover, .dropdown-content-menu a:hover {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        }
+
+        .menu {
+        display: inline-block;
+        text-align: right;
+        width: 50%;
+        }
+
+        .menu a {
+        padding: 8px;
+        background-color: black;
+        border-radius: 5px;
+        }
+
+        .dropdown-content-menu {
+        color: white;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        }
+
+        .dropdown-content-menu a {
+        display: block;
+        margin: 0;
+        z-index: 100;
+        }
+
+        #homepage1 {
+        text-transform: uppercase;
+        margin-top: 5px;
+        }
+
+        #homepage2 {
+        color: black;
+        }
+
+        #homepage3 {
+        font-family: 'Caveat', cursive;
+        font-size: 190%;
+        text-align: left;
+        }
+
+        header>div>h1, header>div>h2, header>div>h3 {
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: 125px;
+        text-align: left;
+        }
+
+        #social-media-icon-banner {
+        width: 35px;
+        float: right;
+        margin-top: 20px;
+        margin-right: 5px;
+        }
+
+        #logo-banner {
+        margin-top: 5px;
+        margin-left: 5px;
+        height: 100px;
+        float: left;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="grid-container-banner">
+            <div class="grid-row-3" style="width: 100%;"><a href="index.html"><img id="logo-banner" src="assets/images/logo.png"></a></div>
+            <div style="width: 100%;"><h1>
+              <a id="homepage1" href="index.html">Expedians United</a>
+            </h1></div>
+            <div style="margin-top: 10px">
+              <a href="https://www.meetup.com/expedians-unitedprague-college-football-meetup-group/" target="_blank"><img id=social-media-icon-banner src="assets/images/meetup2.png"></a>
+              <a href="https://www.instagram.com/expedians_united/" target="_blank"><img id=social-media-icon-banner src="assets/images/instagram2.png"></a>
+              <a href="https://www.facebook.com/expedians.united" target="_blank"><img id=social-media-icon-banner src="assets/images/facebook2.png"></a>
+            </div>
+            <div style="width: 100%;"><h2>
+              <a id="homepage2" href="index.html">Official Website</a>
+            </h2></div>
+            <div></div>
+            <div style="width: 100%;"><h3 id="homepage3">
+              More than Football
+            </h3></div>
+            <div class="grid-container-menu">
+              <div class="grid-item-menu">
+                <a href="index.html">HOME</a>
+              </div>
+              <div class="grid-item-menu dropdown"> TEAMS
+                <div class="dropdown-content-menu">
+                  <a href="aces.html">ACES</a>
+                  <a href="braves.html">BRAVES</a>
+                </div>
+              </div>
+              <div class="grid-item-menu">
+                <a href="fields.html">FIELDS</a>
+              </div>
+              <div class="grid-item-menu dropdown"> RECORDS
+                <div class="dropdown-content-menu">
+                  <a href="club-records.html">CLUB</a>
+                  <a href="individual-records.html">PLAYERS</a>
+                </div>
+              </div>
+              <div class="grid-item-menu">
+                <a href="join-us.html">JOIN US</a>
+              </div>
+              <div class="grid-item-menu">
+                <a href="contact.html">CONTACT</a>
+              </div>
+            </div>
+        </div>
+      </header>
+  </body>
+</html>

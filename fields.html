@@ -2,18 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Expedians United - Fields</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Saira+Stencil+One&family=Sirin+Stencil&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/images/icon.png">
-  </head>
-
-  <body>
+  </head><body style="background-image: url('assets/images/background.png');">
     <header>
       <div class="grid-container-banner">
-          <div class="grid-row-3" style="width: 100%;"><a href="index.html"><img src="assets/images/logo.png" style="margin-top: 5px; margin-left: 5px; height: 100px; float: left;"></a></div>
+          <div class="grid-row-3" style="width: 100%;"><a href="index.html"><img id="logo-banner" src="assets/images/logo.png"></a></div>
           <div style="width: 100%;"><h1>
             <a id="homepage1" href="index.html">Expedians United</a>
           </h1></div>
@@ -33,17 +32,20 @@
             <div class="grid-item-menu">
               <a href="index.html">HOME</a>
             </div>
-            <div class="grid-item-menu">
-              <a href="team-hanspaulka.html">TEAM</a>
-            </div>
-            <div class="grid-item-menu">
-              <a href="matches.html">MATCHES</a>
+            <div class="grid-item-menu dropdown"> TEAMS
+              <div class="dropdown-content-menu">
+                <a href="aces.html">ACES</a>
+                <a href="braves.html">BRAVES</a>
+              </div>
             </div>
             <div class="grid-item-menu">
               <a href="fields.html">FIELDS</a>
             </div>
-            <div class="grid-item-menu">
-              <a href="club-records.html">RECORDS</a>
+            <div class="grid-item-menu dropdown"> RECORDS
+              <div class="dropdown-content-menu">
+                <a href="club-records.html">CLUB</a>
+                <a href="individual-records.html">PLAYERS</a>
+              </div>
             </div>
             <div class="grid-item-menu">
               <a href="join-us.html">JOIN US</a>
@@ -89,20 +91,14 @@
         <p>190 00 Prague 9</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.763855557696!2d14.489411776537182!3d50.10942687152911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bed4bd4397715%3A0x8865723c134acb28!2zVU1UIFBvZHZpbm7DvSBNbMO9bg!5e0!3m2!1sen!2scz!4v1704574498144!5m2!1sen!2scz" width=40% style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <hr style="clear: both;">
+        <br><hr>
+        <h2>Expedians Calendar</h2>
+        <hr><br>
+        <iframe src="https://calendar.google.com/calendar/embed?src=expediansunited%40gmail.com&ctz=Europe%2FPrague" class="calendar"></iframe>
       </main>
       <footer>
-        <div>
-          <a href="https://www.facebook.com/expedians.united" target="_blank"><img id= social-media-icon src="assets/images/facebook.png"></a>
-          <a href="https://www.instagram.com/expedians_united/" target="_blank"><img id= social-media-icon src="assets/images/instagram.png"></a>
-          <a href="https://www.meetup.com/expedians-unitedprague-college-football-meetup-group/" target="_blank"><img id=social-media-icon src="assets/images/meetup.png"></a>
-        </div>
-        <div>
-          <p>Expedians United <span style="color: #59AD7B;font-weight: bold;">|</span> Prague <span style="color: #59AD7B;font-weight: bold;">|</span> Czech Republic</p>
-        </div>
-        <div>
-          <p>+420 734126627 <span style="color: #59AD7B;font-weight: bold;">|</span> <a href="mailto:expediansunited@gmail.com">expediansunited@gmail.com</a></p>
-        </div>
-        </footer>
+        <iframe src="footer.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+      </footer>
   </body>
 
 </html>
