@@ -2,8 +2,8 @@ body {
     background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 30% 100%;
     background-position: right;
+    background-size: 30% 100%;
     color: white;
     font-family: 'Sirin Stencil One', sans-serif;
     overflow: auto;
@@ -22,12 +22,17 @@ header {
     top: 0;
     left: 0;
     z-index: 100;
+    display: block;
+}
+
+.text-banner-1, .text-banner-2, .text-banner-3 {
+  width: 100%;
 }
 
 .grid-container-banner {
   display: grid;
   grid-template-columns: 120px 320px auto;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-rows: repeat(3,33%);
   background-color: #3b7753;
   align-items: center;
   padding-top: 5px;
@@ -45,7 +50,7 @@ header {
 
  .grid-container-menu {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-columns: repeat(7,auto);
   color: white;
 }
 
@@ -63,6 +68,10 @@ header {
   background-color: white;
   color: black;
   font-weight: bold;
+}
+
+.down-arrow-grey{
+  height: 15px;
 }
 
 .menu {
@@ -230,7 +239,7 @@ li {
     border: 1px solid #3b7753;
     border-radius: 5px;
     right: 38%;
-    top: 26%;
+    top: 1070px;
     align-items: center;
   }
   
@@ -247,7 +256,7 @@ li {
     border: 1px solid #3b7753;
     border-radius: 5px;
     right: 38%;
-    top: 26%;
+    top: 1070px;
     align-items: center;
   }
 
@@ -286,6 +295,7 @@ li {
   .flex-container {
     display: flex;
     margin-bottom: 0px;
+    justify-content: space-between;
   }
 
   .box-frame {
@@ -302,7 +312,7 @@ li {
   }
 
   .card {
-    height: 100%;
+    height: 180px;
     margin-bottom: 20px;
   }
 
@@ -312,48 +322,38 @@ li {
     margin-bottom: 1px;
   }
 
-  .grid-container {
+  .grid-container, .grid-container-home {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 35% 30% 35%;
     background-color: white;
     color: black;
     justify-items: center;
     align-items: center;
     width: 100%;
-    position: relative;
-  }
-
-  .grid-container-home {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: white;
-    color: black;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
+    height: 100%;
     position: relative;
   }
 
   .matches {
-    width: 70%;
-    left: 15%;
+    width: 90%;
+    left: 5%;
     position: relative;
+    margin: 50px 0;
   }
 
   .grid-container-matches-results {
     display: grid;
-    grid-template-columns: 15% 15% 50% 20%;
+    grid-template-columns: repeat(2,10%) 55% 25%;
     grid-template-rows: 40% 60%;
     background-color: black;
     color: white;
-    justify-items: center;
     align-items: center;
     position: relative;
     width: 100%;
+    margin: 10px 0;
   }
 
   .grid-item {
-    text-align: center;
     font-size: 90%;
   }
 
@@ -374,8 +374,12 @@ li {
     font-size: 85%;
   }
 
-  .grid-item-results, .grid-item-results-card {
+  .grid-item-results, .grid-item-results-card, .match-sheet-results {
     font-family: 'Saira Stencil One', sans-serif;
+  }
+
+  .match-sheet-results {
+    font-size: 300%;
   }
 
   .grid-item-results {
@@ -386,7 +390,7 @@ li {
     font-size: 400%;
   }
 
-  .grid-match-details {
+  .grid-match-details, .grid-match-details-list {
     background-color: #3b7753;
     color: white;
     opacity: 95%;
@@ -396,8 +400,12 @@ li {
     font-size: 75%;
   }
 
-  .grid-team-logo, .grid-team-logo-matche {
+  .grid-team-logo {
     width: 55%;
+  }
+
+  .grid-team-logo-matches {
+    width: 75%;
   }
 
   .grid-column-2 {
@@ -418,6 +426,8 @@ li {
 
   .grid-teams-names {
     font-size: 110%;
+    display: flex;
+    justify-content: left;
   }
 
   #match-sheet {
@@ -438,384 +448,159 @@ li {
     filter: invert(.9) saturate(0.5) hue-rotate(145deg);
   }
 
-@media (max-width:425px) {
-  body {
-    background-color: black;
-    background-image: url('assets/images/background.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 30% 100%;
-    background-position: right;
-    color: white;
-    font-family: 'Sirin Stencil One', sans-serif;
-    overflow: auto;
-    height: 100%;
-}
-
-header {
-    padding: 0px;
-    border-radius: 5px;
-    padding-bottom: 10px;
-    width: 100%;
-    height: 70px;
-    margin-bottom: 5px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.grid-container-banner {
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  background-color: #3b7753;
-  align-items: center;
-  padding-top: 5px;
-  border-radius: 5px;
-  padding-bottom: 10px;
-  width: 100%;
-  height: 60px;
-  margin-bottom: 5px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  border: white solid 2px;
- }
-
- .grid-container-menu {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto;
-  color: white;
-}
-
-.grid-item-menu {
-  text-align: center;
-  border-radius: 5px;
-  padding: 8px 7px;
-  margin: 0 2px;
-  background-color: black;
-  font-size: 100%;
-  white-space: nowrap;
-}
-
-.grid-item-menu:hover {
-  background-color: white;
-  color: black;
-  font-weight: bold;
-}
-
-header>div>h1, header>div>h2, header>div>h3 {
-    margin-bottom: 0;
-    margin-top: 0;
-    text-align: left;
-}
-
-#logo-banner {
-  margin-top: 5px;
-  margin-left: 5px;
-  height: 60px;
-}
-
-#social-media-icon-banner {
-  width: 35px;
-  float: right;
-  margin-top: 20px;
-  margin-right: 5px;
-}
-
-#homepage1 {
-  font-size: 50%;
-}
-
-#homepage2 {
-  font-size: 50%;
-}
-
-#homepage3 {
-  font-size: 100%;
-}
-
-footer {
-  text-align: center;
-  color: black;
-  background-color: white;
-  border-radius: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 25px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-#social-media-icon {
-    width: 15px;
-    margin-top: 2px;
-}
-
-footer p {
-  margin: 2px 0px;
-  font-size: 7px;
-}
-
-.pic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 50%;
-    opacity: 90%;
-    border-radius: 5px;
-}
-
-.stadium {
-    width: 50%;
-    opacity: 90%;
-    border-radius: 5px;
-    margin: 10px 0;
-}
-
-.flag {
-    width: 15px;
-    border-radius: 100%;
-    border: white solid 10px;
-}
-
-main {
-    text-align: center;
-    width: 72%;
-    margin-top: 100px;
-    position: relative;
-}
-
-main h1, main h2, main h3 {
-  font-size: 100%;
-}
-
-.page-split {
-    display: inline-block;
-    border: 1px solid white;
-    font-size: 0.9rem;
-    padding: 0 15px;
-}
-
-.address {
+  .google-map-field {
+    width: 40%;
+    border: 0;
+    border-radius: 10px;
     margin-top: 30px;
-}
-
-main>p {
-    margin: 0;
-}
-
-iframe {
-    margin: 15px 0;
-}
-
-.logo-name {
-    display: inline-block;
-}
-
-.menu {
-    display: inline-block;
-    text-align: right;
-    width: 50%;
-}
-
-li {
-    display: inline;
-}
-
-.menu a {
-    padding: 8px;
-    background-color: black;
-    border-radius: 5px;
   }
 
-  .dropdown {
-    position: relative;
-    display: inline-block;
+@media (min-width: 852px) and (max-width: 1048px) {
+  .grid-item-results-card {
+    font-size: 300%;
   }
 
-  .card-back {
-    position: absolute;
-    background-color: black;
-    width: 200px;
-    padding: 12px 16px;
-    z-index: 1;
-    border: 1px solid #3b7753;
-    border-radius: 5px;
-  }
-  
-  .dropdown-content {
+  .dropdown-roster:hover .dropdown-content, .card-back{
     display: none;
-    position: absolute;
-    background-color: black;
-    width: 200px;
-    padding: 12px 16px;
-    z-index: 1;
-    border: 1px solid #3b7753;
-    border-radius: 5px;
-  }
-  
-  .dropdown:hover .dropdown-content, .dropdown-roster:hover .dropdown-content {
-    display: block;
   }
 
-  ul {
-    padding-left: 0;
+  .grid-teams-names {
+    font-size: 90%;
   }
 
-  .flex-container {
-    display: flex;
+  .google-map-field {
+    width: 30%;
+    height: 100px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 574px) and (max-width: 852px) {
+
+  .grid-item-results-card {
+    font-size: 200%;
   }
 
-  .box-frame {
-    border-radius: 5px;
-    border: #3b7753 solid 2px;
-  }
-
-  .card, .card-title {
-    flex: 1;
-    background-color: white;
-    color: black;
-    margin-left: 5px;
+  #social-media-icon-banner {
+    width: 20px;
+    float: right;
+    margin-top: 20px;
     margin-right: 5px;
   }
 
+  h1 {
+    font-size: 175%;
+  }
+
+  h2 {
+    font-size: 125%;
+  }
+
+  h3 {
+    font-size: 100%;
+    margin-top: 10px;
+  }
+
+  h4 {
+    font-size: 90%;
+  }
+
+  .line-up {
+    font-size: 0.85rem;
+  }
+
+  .team-league-table {
+    font-size: 80%;
+  }
+
+  .grid-teams-names {
+    font-size: 75%;
+  }
+
+  .grid-item-results {
+    font-size: 150%;
+  }
+
   .card {
-    height: 100%;
+    height: 120px;
     margin-bottom: 20px;
   }
 
   .card-title {
-    height: 12px;
-    margin-top: 3px;
-    font-size: 0.4rem;
-    padding-top: 2px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 1px;
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: white;
-    color: black;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
+  .card, .card-title {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
-  .grid-container-home {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    background-color: white;
-    color: black;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
+  th {
+    padding: 5px 0;
   }
 
   .grid-container-matches-results {
-    display: grid;
-    grid-template-columns: 15% 15% 50% 20%;
-    grid-template-rows: 40% 60%;
-    background-color: black;
-    color: white;
-    justify-items: center;
-    align-items: center;
-    position: relative;
-  }
-  
-  .grid-item {
-    text-align: center;
-    font-size: 50%;
+    margin: 0;
   }
 
-  .grid-row-2 {
-    grid-row: span 2;
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 75%;
   }
 
-  .grid-row-3 {
-    grid-row: span 3;
+  iframe {
+    bottom: 0;
   }
 
-  .grid-date {
-    margin-top: 3px;
-    font-weight: bold;
-  }
-  
-  .grid-field {
-    font-size: 5px;
-    text-align: center;
+  .google-map-field {
+    height: 80px;
+    margin-top: 20px;
   }
 
-  .grid-item-results, .grid-item-results-card {
-    font-family: 'Saira Stencil One', sans-serif;
+  .grid-container-banner {
+    grid-template-columns: 100px 250px auto;
+    height: 80px;
+    margin-bottom: 0;
   }
 
-  .grid-item-results {
-    font-size: 300%;
+  .grid-item-menu {
+    font-size: 60%;
+    padding: 4px 3px;
+    height: 12px;
   }
 
-  .grid-item-results-card {
-    font-size: 100%;
+  .down-arrow-grey {
+    height: 8px;
   }
 
-  .grid-match-details {
-    background-color: #3b7753;
-    color: white;
-    opacity: 95%;
-    border-radius: 15px;
-    padding: 2px 5px;
-    margin: 2px 0;
+  header {
+    margin-bottom: 0;
   }
 
-  .grid-team-logo {
-    width: 55%;
+  main {
+    margin-top: 100px;
   }
 
-  .grid-team-logo-matches {
-    width: 55%;
+  #logo-banner {
+    height: 80px;
   }
 
-  .grid-column-2 {
-    grid-column: span 2;
-  }
-  .grid-column-3 {
-    grid-column: span 3;
+  .text-banner-1 {
+    font-size: 90%;
   }
 
-  .grid-column-2, .grid-column-3 {
-    width: 90%;
+  .text-banner-2 {
+    font-size: 80%;
   }
 
-  .grid-title {
-    color: #3b7753;
-    font-weight: bold;
+  .text-banner-3 {
+    font-size: 80%;
   }
 
-  .grid-teams-names {
-    font-size: 155%;
-  }
-
-  #match-sheet {
-    grid-template-columns: 1.2fr 0.6fr 1.2fr;
-    width: 70%;
-    left: 15%;
-  }
-
-  .link:hover {
-    color: #3b7753;
-  }
-
-  main h3 {
-    margin: 1px 0px;
+  .calendar {
+    height: 200px;
   }
 }
